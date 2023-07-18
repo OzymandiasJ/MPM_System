@@ -1,5 +1,18 @@
-# MPM_System
-Minimalist Product Back-end Management System ，极简商品后台管理系统
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/7669891b-8394-43c2-849b-e93f8736a590)# MPM_System
+Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理系统，实现了最基本的商品增删改查功能，适用于课设项目
+
+项目预览：
+1，index页面：
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/4e209660-54fd-492d-9fe6-bb6d5533ecee)
+点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面：
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/e3180489-2efb-443d-a358-a709d63aca02)
+点击增加商品进入商品添加页面：
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/e1ccf0ce-fab5-466e-8dfb-2496800c728b)
+
+
+
+
+
 
 使用说明：
 
@@ -8,6 +21,7 @@ Minimalist Product Back-end Management System ，极简商品后台管理系统
 2，将web.WEBINF.lib中的所有文件加入依赖
 4，配置tomcat启动URL参数：http://localhost:8080/yourProjectName/index，即后面加上index
 5，启动项目，会自动打开浏览器
+
 
 注：
 1,暂时没精力提高鲁棒性，尽量不要非法输入或者空缺输入提交
