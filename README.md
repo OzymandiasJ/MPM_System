@@ -2,6 +2,7 @@
 Minimalist Product Back-end Management System ，极简商品后台管理系统
 
 使用说明：
+
 1，请修改druid.properties中的url以及数据库账户名username和password
 2，运行mysql.txt脚本，创建数据库
 2，将web.WEBINF.lib中的所有文件加入依赖
