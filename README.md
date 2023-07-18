@@ -3,13 +3,16 @@ JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management S
 项目预览：
 
 1，index页面：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/4e209660-54fd-492d-9fe6-bb6d5533ecee)
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/0113e2a9-29e2-4efc-a707-02ff44b0b49c)
 
-2，点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/e3180489-2efb-443d-a358-a709d63aca02)
+
+2，点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面，编辑页面可以完成商品的删除：
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/d08873c2-bf2b-4dc9-a560-8e7da5fb8b52)
+
 
 3，点击增加商品进入商品添加页面：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/e1ccf0ce-fab5-466e-8dfb-2496800c728b)
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/493a6abe-a341-488a-9ff6-ba7dc94e2ebe)
+
 
 
 
