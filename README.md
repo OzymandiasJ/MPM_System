@@ -1,5 +1,4 @@
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/7669891b-8394-43c2-849b-e93f8736a590)# MPM_System
-Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理系统，实现了最基本的商品增删改查功能，适用于课设项目
+JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management System）， 实现了最基本的商品增删改查功能，适用于课设项目
 
 项目预览：
 
@@ -11,7 +10,6 @@ Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理
 
 3，点击增加商品进入商品添加页面：
 ![image](https://github.com/Pluto365/MPM_System/assets/69197910/e1ccf0ce-fab5-466e-8dfb-2496800c728b)
-
 
 
 
