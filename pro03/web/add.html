@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="css/add.css">
+<body>
+    <div class="main">
+        <div class="headinfo">编辑商品信息</div>
+            <form action="add.do" method="post"class="mainform">
+                <table id="tbl_product">
+                    <tr>
+                        <th>名称：</th>
+                        <td><input type="text" name="productName"/></td>
+                    </tr>
+                    <tr>
+                        <th>单价：</th>
+                        <td><input type="text" name="price"/></td>
+                    </tr>
+                    <tr>
+                        <th>库存：</th>
+                        <td><input type="text" name="productRemain"/></td>
+                    </tr>
+                    <tr>
+                        <th>进价：</th>
+                        <td><input type="text" name="inPrice"/></td>
+                    </tr>
+                </table>
+                <button type="submit" class="submitbtn">提交添加</button>
+            </form>
+</div>
+
+</body>
+</html>

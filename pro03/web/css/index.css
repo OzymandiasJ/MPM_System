@@ -1,0 +1,176 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.maindiv{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+}
+.headinfo{
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+}
+.maintable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.maintable thead tr th{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+.maintable tbody tr td{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+.addbtn {
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .addbtn:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 14px;
+  }
+
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 1s ease-in-out;
+    position: relative;
+  }
+  a:link {
+    color:#315cfd;
+  }
+  a:visited{
+    color:#315cfd;
+  }
+ 
+
+
+  /* 查询框 */
+  .group {
+    position: relative;
+   }
+   
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 215px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }

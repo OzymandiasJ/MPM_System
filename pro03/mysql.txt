@@ -1,0 +1,22 @@
+CREATE TABLE products (
+  id BIGINT(6) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  productName VARCHAR(255) NOT NULL,
+  price DOUBLE NOT NULL,
+  productRemain DOUBLE NOT NULL,
+  inPrice DOUBLE NOT NULL
+);
+
+INSERT INTO products (productName, price, productRemain, inPrice)
+VALUES ('iPhone', 8999.00, 100, 7999.00);
+
+INSERT INTO products (productName, price, productRemain, inPrice)
+VALUES ('华为Mate40 Pro', 6999.00, 50, 5999.00);
+
+INSERT INTO products (productName, price, productRemain, inPrice)
+VALUES ('小米10 Pro', 4499.00, 80, 3999.00);
+
+INSERT INTO products (productName, price, productRemain, inPrice)
+VALUES ('OPPO Reno6 Pro+', 3499.00, 120, 2999.00);
+
+INSERT INTO products (productName, price, productRemain, inPrice)
+VALUES ('vivo X60 Pro', 3799.00, 60, 3299.00);
