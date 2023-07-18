@@ -2,11 +2,14 @@
 Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理系统，实现了最基本的商品增删改查功能，适用于课设项目
 
 项目预览：
+
 1，index页面：
 ![image](https://github.com/Pluto365/MPM_System/assets/69197910/4e209660-54fd-492d-9fe6-bb6d5533ecee)
-点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面：
+
+2，点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面：
 ![image](https://github.com/Pluto365/MPM_System/assets/69197910/e3180489-2efb-443d-a358-a709d63aca02)
-点击增加商品进入商品添加页面：
+
+3，点击增加商品进入商品添加页面：
 ![image](https://github.com/Pluto365/MPM_System/assets/69197910/e1ccf0ce-fab5-466e-8dfb-2496800c728b)
 
 
@@ -17,15 +20,22 @@ Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理
 使用说明：
 
 1，请修改druid.properties中的url以及数据库账户名username和password
+
 2，运行mysql.txt脚本，创建数据库
+
 2，将web.WEBINF.lib中的所有文件加入依赖
+
 4，配置tomcat启动URL参数：http://localhost:8080/yourProjectName/index，即后面加上index
+
 5，启动项目，会自动打开浏览器
 
 
 注：
+
 1,暂时没精力提高鲁棒性，尽量不要非法输入或者空缺输入提交
+
 2,为了解决项目运行过程中突然出现的错误：
+
     The last packet sent successfully to the server was 44,476 milliseconds ago.
     is longer than the server configured value of 'wait_timeout'.
 
@@ -42,31 +52,58 @@ Minimalist Product Back-end Management System ，JavaWeb极简商品后台管理
 
 一，myssm.utils工具包：
     1，jdbcutils
+    
     负责简化封装：
+        
         注册驱动
+        
         获取连接
+        
         管理连接池
+        
         回收连接
+        
+    
     主要负责的是连接相关的内容
+    
     2，BaseDao
+    
     负责简化封装：
+    
         查询的方法
+        
         非查询的方法
+        
     主要负责的是数据库具体的动作 curd
+    
 二，myssm.myspringmvc包
+
     ViewBase工具，用于thymeleaf页面渲染
+    
 三，dao包
+
     针对User类的数据库操作封装
+    
 四，view包
+
     实现控制台输出
+    
 五，beans包
+
     里面放的是Product类的实现
+    
 六，demo_xxx包
+
     学习过程中用到的，不需要的，可以删掉
+    
 七，Products包
+
     1，dao
+    
         实现数据库查询
+        
     2，servlets
+    
         实现各个servlet
 
 
