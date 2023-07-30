@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+<body>
+    <!--头部，主要是logo和图片 -->
+    <div class="header">
+      <div class="logo"><a href="products.do"><img src="images/logo.png" width="286" height="64" alt="Image"></a></div>
+      <div class="pageurl">
+          <div class="home">Home</div>
+          <div><img src="images/point.png" width="7" height="7" alt="Image"></div>
+          <div class="myaccount">My Account</div>
+          <div><img src="images/point.png" width="7" height="7" alt="Imag
+            e"></div>
+          <div class="shop">Mall</div>
+          <div><img src="images/point.png" width="7" height="7" alt="Image"></div>
+          <div class="contactus">Contact Us</div>
+      </div>
+      <div class="pageName">极简商品后台管理系统</div>
+      <div><svg t="1689270981647" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1735" width="64" height="64"><path d="M63.6 489.6h896.7v44.8H63.6z" p-id="1736" fill="#561f7aff"></path></svg></div>
+  </div>
+  <div class="maindiv">
+    <form id="search-form" action="products.do" method="get">
+      <!--    隐藏域，随表单发送-->
+      <input type="hidden" name="operate" th:value="search">
+
+      <div class="group" th:if="${session.keyword}">
+        <input type="text" class="input" name="keyword" th:value="${session.keyword}"/>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>请输入要查询的商品名关键字</label>
+      </div>
+      <div class="group" th:unless="${session.keyword}">
+        <input type="text" class="input" name="keyword"/>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>请输入要查询的商品名关键字</label>
+      </div>
+
+    </form>
+    <table class="maintable">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>商品名称</th>
+        <th>价格</th>
+        <th>库存</th>
+        <th>进价</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr th:each="product:${session.productList}">
+          <td th:text="${product.id}">1</td>
+          <td><a th:text="${product.productName}" th:href="@{/products.do(id=${product.id},operate='edit')}" methods="get">iphone</a></td>
+          <td th:text="${product.price}">8999.00</td>
+          <td th:text="${product.productRemain}">100</td>
+          <td th:text="${product.inPrice}">7999.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="btndiv">
+      <button  class="beginbtn pagebtn btn" th:onclick="|page(1,${session.pageCount})|">首页</button>
+      <button  class="prebtn pagebtn btn" th:onclick="|page(${session.pageNo}-1,${session.pageCount})|">上一页</button>
+      <button  class="addbtn btn" onclick="window.location.href='add.html';">增加商品</button>
+      <button  class="nextbtn pagebtn btn" th:onclick="|page(${session.pageNo}+1,${session.pageCount})|">下一页</button>
+      <button  class="endbtn pagebtn btn" th:onclick="|page(${session.pageCount},${session.pageCount})|">尾页</button>
+    </div>
+</div>
+
+    <!-- 尾部 -->
+    <div class="footer">
+      <div class="topinfo">
+          <div class="list1 topinfo_list">
+              <div><img src="images/logo.png" width="260" height="50" alt="Image"></div>
+              <div>45 Grand Central Terminal New York,NY 1017 United State USA</div>
+              <div>contact@ozyblog.com</div>
+              <div>(+123) 456 789 - (+204) 666 888</div>
+          </div>
+          <div class="list2 topinfo_list">
+              <div>Customer</div>
+              <div>Shipping & Returns</div>
+              <div>Secure Shopping</div>
+              <div>Order Status</div>
+              <div>International Shipping</div>
+              <div>Affiliates</div>
+          </div>
+          <div class="list3 topinfo_list">
+              <div>Information</div>
+              <div>Privacy Policy</div>
+              <div>Customer Service</div>
+              <div>Orders and Returns</div>
+              <div>Contact</div>
+              <div>Sitemap</div>
+          </div>
+          <div class="list4 topinfo_list">
+              <div>Newsletter</div>
+              <div>Get Discount 30% Off</div>
+              <div>Nam sed felis at eros blandit ultrices et quis quam. In sit amet molestie lectus.</div>
+          </div>
+
+      </div>
+      <div class="midinfo">
+
+      </div>
+      <div class="bottominfo">
+
+      </div>
+  </div>
+</body>
+
+</html>

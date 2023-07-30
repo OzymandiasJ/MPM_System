@@ -1,0 +1,177 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh);
+  margin: 0;
+}
+.header{
+  width: 100%;
+  height: calc(25vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+.header .logo{
+  display: flex;
+  justify-content: center;
+}
+.header .pageurl{
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header .pageName{
+  font-size: 45px;
+  margin-top: 30px;
+}
+
+
+
+
+/* 主体部分 */
+.main{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 70%;
+  height: calc(50vh);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.mainform{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainform tr{
+    margin: 15px;
+
+}
+.mainform tr th{
+    width: 100px;
+    padding: 2px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+.mainform tr td{
+    width: 300px;
+    height: 40px;
+}
+.mainform tr input{
+    background-color: #fff;
+    padding: 2px;
+    font-size: 16px;
+    line-height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.submitbtn {
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .submitbtn:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 14px;
+  }
+
+
+  
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 1s ease-in-out;
+    position: relative;
+  }
+  a:link {
+    color:#315cfd;
+  }
+  a:visited{
+    color:#315cfd;
+  }
+
+
+
+  /* footer部分 */
+.footer {
+  width: 100%;
+  height: calc(25vh);
+  padding-top: 30px;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 30px;
+}
+.footer .topinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+.footer .topinfo .topinfo_list{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 260px;
+  width: 260px;
+}
+.footer .topinfo .topinfo_list div{
+  color: rgb(128, 128, 128);
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer .topinfo .list2 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list3 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list4 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list4 div:nth-child(2){
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}

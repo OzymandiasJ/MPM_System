@@ -1,0 +1,288 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh);
+    margin: 0;
+}
+.header{
+  width: 100%;
+  height: calc(25vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+.header .logo{
+  display: flex;
+  justify-content: center;
+}
+.header .pageurl{
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header .pageName{
+  font-size: 45px;
+  margin-top: 30px;
+}
+/*主体部分*/
+.maindiv{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 70%;
+    height: calc(50vh);
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.maintable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+tbody{
+    height: 230px;
+}
+
+.maintable thead tr th{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+.maintable tbody tr td{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.btndiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;;
+  width: 80%;
+
+}
+.pagebtn{
+  width: 100px;
+  height: 40px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 16px;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.addbtn {
+    width: 100px;
+    height: 40px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .btndiv .pagebtn{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .addbtn:hover,.btn:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 12px;
+  }
+
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 1s ease-in-out;
+    position: relative;
+  }
+  a:link {
+    color:#315cfd;
+  }
+  a:visited{
+    color:#315cfd;
+  }
+
+
+
+
+
+/* 查询框 */
+.group {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 16px;
+    color: #5264AE;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 215px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+/* footer部分 */
+.footer {
+  width: 100%;
+  height: calc(25vh);
+  padding-top: 30px;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 30px;
+
+  
+}
+.footer .topinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+.footer .topinfo .topinfo_list{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 260px;
+  width: 260px;
+}
+.footer .topinfo .topinfo_list div{
+  color: rgb(128, 128, 128);
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer .topinfo .list2 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list3 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list4 div:first-child{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer .topinfo .list4 div:nth-child(2){
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}

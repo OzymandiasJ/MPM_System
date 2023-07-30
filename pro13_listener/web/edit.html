@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="css/edit.css">
+<body>
+    <!--头部，主要是logo和图片 -->
+    <div class="header">
+        <div class="logo"><a href="products.do"><img src="images/logo.png" width="286" height="64" alt="Image"></a></div>
+        <div class="pageurl">
+            <div class="home">Home</div>
+            <div><img src="images/point.png" width="7" height="7" alt="Image"></div>
+            <div class="myaccount">My Account</div>
+            <div><img src="images/point.png" width="7" height="7" alt="Image"></div>
+            <div class="shop">Mall</div>
+            <div><img src="images/point.png" width="7" height="7" alt="Image"></div>
+            <div class="contactus">Contact Us</div>
+        </div>
+        <div class="pageName">编辑商品</div>
+        <div><svg t="1689270981647" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1735" width="64" height="64"><path d="M63.6 489.6h896.7v44.8H63.6z" p-id="1736" fill="#561f7aff"></path></svg></div>
+    </div>
+    <div class="main">
+        <form  action="products.do" method="post" class="mainform">
+            <!--    隐藏域，随表单发送-->
+            <input type="hidden" name="operate" th:value="update">
+            <input type="hidden" name="id" th:value="${product.id}">
+            <table id="tbl_product" th:object="${product}">
+                <tr>
+                    <th>名称：</th>
+                    <td><input type="text" name="productName" th:value="*{productName}"/></td>
+                </tr>
+                <tr>
+                    <th>单价：</th>
+                    <td><input type="text" name="price" th:value="*{price}"/></td>
+                </tr>
+                <tr>
+                    <th>库存：</th>
+                    <td><input type="text" name="productRemain" th:value="*{productRemain}"/></td>
+                </tr>
+                <tr>
+                    <th>进价：</th>
+                    <td><input type="text" name="inPrice" th:value="*{inPrice}"/></td>
+                </tr>
+                <tr>
+                    <th>删除：</th>
+                    <td><a th:text="点击删除该商品" th:href="@{/products.do(id=${product.id},operate='delete')}" methods="get"></a></td>
+                </tr>
+            </table>
+            <button type="submit" class="submitbtn">提交修改</button>
+        </form>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="topinfo">
+            <div class="list1 topinfo_list">
+                <div><img src="images/logo.png" width="260" height="50" alt="Image"></div>
+                <div>45 Grand Central Terminal New York,NY 1017 United State USA</div>
+                <div>contact@ozyblog.com</div>
+                <div>(+123) 456 789 - (+204) 666 888</div>
+            </div>
+            <div class="list2 topinfo_list">
+                <div>Customer</div>
+                <div>Shipping & Returns</div>
+                <div>Secure Shopping</div>
+                <div>Order Status</div>
+                <div>International Shipping</div>
+                <div>Affiliates</div>
+            </div>
+            <div class="list3 topinfo_list">
+                <div>Information</div>
+                <div>Privacy Policy</div>
+                <div>Customer Service</div>
+                <div>Orders and Returns</div>
+                <div>Contact</div>
+                <div>Sitemap</div>
+            </div>
+            <div class="list4 topinfo_list">
+                <div>Newsletter</div>
+                <div>Get Discount 30% Off</div>
+                <div>Nam sed felis at eros blandit ultrices et quis quam. In sit amet molestie lectus.</div>
+            </div>
+  
+        </div>
+        <div class="midinfo">
+  
+        </div>
+        <div class="bottominfo">
+  
+        </div>
+    </div>
+</body>
+</html>

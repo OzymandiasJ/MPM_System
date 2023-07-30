@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+<!--    1,描述需要哪些组件-->
+<!--    2，描述组件之间的依赖关系-->
+    <bean id="productDao" class="com.ozy.product.dao.impl.ProductDaoImpl"/>
+    <bean id="productService" class="com.ozy.product.service.impl.ProductServiceImpl">
+        <!--    property标签用来表示属性;name表示属性名;ref表示引用其他bean的id值-->
+        <property name="productDao" ref="productDao"/>
+    </bean>
+    <!--        这里的productDao表示ProductService类中ProductDao productsDao=null;对应的ProductDao-->
+    <!--        ref表示引用上面的<bean id="productDao"-->
+    <bean id="products" class="com.ozy.product.controllers.ProductController">
+        <property name="productService" ref="productService"/>
+    </bean>
+</beans>
