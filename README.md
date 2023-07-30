@@ -3,15 +3,18 @@ JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management S
 项目预览：
 
 1，index页面：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/0113e2a9-29e2-4efc-a707-02ff44b0b49c)
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/de18384b-a372-4e8a-8d53-6567cbc89e00)
+
 
 
 2，点击商品名进入编辑页面，输入商品名可以进行搜索，然后进入商品编辑页面，编辑页面可以完成商品的删除：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/d08873c2-bf2b-4dc9-a560-8e7da5fb8b52)
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/3c797288-f0cd-49ff-bb0b-829991a6d5c7)
+
 
 
 3，点击增加商品进入商品添加页面：
-![image](https://github.com/Pluto365/MPM_System/assets/69197910/493a6abe-a341-488a-9ff6-ba7dc94e2ebe)
+![image](https://github.com/Pluto365/MPM_System/assets/69197910/d0c537d3-ad6f-4bd2-be2f-92af7a03a224)
+
 
 
 
@@ -106,6 +109,7 @@ JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management S
     2，servlets
     
         实现各个servlet
+八，其他filter和listener
 
 
 
