@@ -52,64 +52,9 @@ JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management S
 
 
 
-工程说明：
 
-一，myssm.utils工具包：
-    1，jdbcutils
-    
-    负责简化封装：
-        
-        注册驱动
-        
-        获取连接
-        
-        管理连接池
-        
-        回收连接
-        
-    
-    主要负责的是连接相关的内容
-    
-    2，BaseDao
-    
-    负责简化封装：
-    
-        查询的方法
-        
-        非查询的方法
-        
-    主要负责的是数据库具体的动作 curd
-    
-二，myssm.myspringmvc包
 
-    ViewBase工具，用于thymeleaf页面渲染
-    
-三，dao包
 
-    针对User类的数据库操作封装
-    
-四，view包
-
-    实现控制台输出
-    
-五，beans包
-
-    里面放的是Product类的实现
-    
-六，demo_xxx包
-
-    学习过程中用到的，不需要的，可以删掉
-    
-七，Products包
-
-    1，dao
-    
-        实现数据库查询
-        
-    2，servlets
-    
-        实现各个servlet
-八，其他filter和listener
 
 
 
