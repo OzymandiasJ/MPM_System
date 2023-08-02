@@ -43,6 +43,7 @@ JavaWeb极简商品后台管理系统（Minimalist Product Back-end Management S
     The last packet sent successfully to the server was 44,476 milliseconds ago.
     is longer than the server configured value of 'wait_timeout'.
 
+
     这个错误是因为navicat默认设置的wait_timeout参数为20(秒)过小的问题，所以最好设置一下mysql连接参数：
     在navicat——新建查询，执行以下语句即可：
 
